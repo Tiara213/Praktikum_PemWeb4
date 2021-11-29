@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        * {
+           box-sizing: border-box;
+           margin: 8px;
+        }
+
+        body {
+            background-color: rgb(245, 140, 163);
+        }
+        #container1 {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        #main1 {
+            display: flex;
+            flex: 1;
+        }
+        #main1 > aside {
+            display: flex;
+            flex: 1;
+            background-color: rgb(11, 97, 93);
+            margin-left: 0;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        #container2 {
+            display: flex;
+            flex: 3;
+            flex-direction: column;
+            margin-right: 0;
+            margin-left: 17px;
+            background-color: rgb(231, 105, 105);
+        }
+        #bagian {
+            display: flex;
+            height: 250px;
+            justify-content: center;
+            align-items: flex-end;
+            color: white;
+        }
+        #main2 {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            height: auto;
+            align-items: flex-end;
+        }
+        #item {
+            display: flex;
+            margin: 13px;
+            width: 30%;
+            align-items: flex-end;
+        }
+        header,
+        footer {
+            height: 20vh;
+            background-color: rgb(30, 182, 144);
+        }
+
+        header,
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        #item > img {
+            width: 100%;
+            height: 100%;
+        }
+        header, footer, article, aside {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <header><h4>Header</h4></header>
+        <div id="main1">
+            <aside><h4>Aside</h4></aside>
+            <div id="container2">
+                <div id="bagian">
+                    <h4>Article</h4>
+                </div>
+                <div id="main2">
+                    <div id="item"><img src="Gambar1.jpeg"></div>
+                    <div id="item"><img src="gambarke2.jpg"></div>
+                    <div id="item"><img src="gambarke3.jpg"></div>
+                </div>
+            </div>
+        </div>
+        <footer><h4>Footer</h4></footer>
+    </div>
+</body>
+</html>

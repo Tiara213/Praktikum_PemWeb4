@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            box-sizing : border-box;
+        }
+        #body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: row;
+            margin: 0;
+        }
+        #main {
+            display: flex;
+            flex: 1;
+        }
+        #main > nav {
+            flex: 1;
+            background-color: rgb(240, 163, 176);
+        }
+        #satu {
+            display: flex;
+            flex-direction: column;
+            flex: 5;
+        }
+       header, footer {
+           background-color: rgb(241, 241, 106);
+           height: 10vh;
+       }
+       #dua {
+           display: flex;
+           flex-direction: row;
+       }
+       #dua > article {
+           min-height: 60vh;
+           background-color: white;
+           flex: 3;
+       }
+       #dua > aside {
+           background-color: rgb(31, 250, 202);
+           flex: 1;
+       }
+       nav, header, footer, article, aside {
+           padding: 1em;
+       }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <nav>Nav</nav>
+        <div id="satu">
+            <header>Header</header>
+            <div id="dua">
+                <article>Article</article>
+                <aside>Aside</aside>
+            </div>
+            <footer>Footer</footer>
+        </div>
+    </div>
+</body>
+</html>
+
